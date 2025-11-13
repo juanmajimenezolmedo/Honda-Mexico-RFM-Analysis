@@ -16,9 +16,9 @@ Frente a la incógnita de cómo puede Honda generar ingresos y mantener la lealt
 
 Y es que la marca ha de reorientar su enfoque de negocio de "vender autos de primera mano" a "ofrecer servicios de postventa y retención excelsos". Premisa bajo la cual el análisis de RFM entra en acción.
 
-## 2. Aplicación del modelo RFM
+## 2. Metodología del Análisis RFM
 
-### 2.1. Fuente de procedencia del dataset
+### 2.1. Dataset utilizado
 
 En una situación ideal, contar con los datos transaccionales reales de los clientes de Honda nos hubiese puesto más en tesitura con la realidad de la marca. Ante la imposibilidad de contar con ellos dada su privacidad, se ha optado por la generación de un dataset sintético.
 
@@ -30,7 +30,7 @@ Este conjunto de datos, creado mediante Python (Pandas y Numpy), simula de forma
 
 Este enfoque nos permite aplicar el modelo RFM en un entorno controlado pero realista, que refleja los distintos comportamientos de los consumidores.
 
-### 2.2. Adaptación de las métricas RFM
+### 2.2. Métricas del RFM
 
 El poder del modelo RFM radica en su simplicidad, pero su verdadero valor emerge al reinterpretar sus métricas para el problema específico de la postventa automotriz. Para este proyecto, las métricas se definen de la siguiente manera:
 
@@ -46,7 +46,7 @@ El poder del modelo RFM radica en su simplicidad, pero su verdadero valor emerge
   - **Medición:** Suma total de Amount (gasto) de todas las transacciones de un CustomerID.
   - **Importancia:** Identifica a los clientes más rentables. No es lo mismo un cliente que solo realiza el cambio de aceite básico, que uno que invierte en servicios premium, repuestos originales y accesorios.
 
-### 2.3. Metodología de Puntuación y Segmentación
+### 2.3. Puntuación y Segmentación
 
 Tras el cálculo de estos tres valores (R, F y M) para cada cliente, procedemos a la extrapolación de estos hacia un sistema de medición comparable.
 
@@ -54,6 +54,11 @@ Para ello, se utilizará el método de cuartiles, donde cada cliente será clasi
 
 Al combinar las tres puntuaciones individuales, se crea un Score RFM para ese individuo (ej. "4-2-3" o "1-3-4"), pudiendo así agrupar a los clientes en segmentos de comportamiento determinados (como pueden ser "Clientes VIP", "Leales" o "En Riesgo de Fuga"), acción clave en la elaboración de una estrategia de retención, plasmada en apéndices venideros.
 
-## 3. Segmentación de clientes y acciones de marketing 
+## 3. Aplicación del RFM
+
+Para llevar a cabo el cometido de elaborar un análisis RFM coherente se ha optado por la utilización del archivo en python "data_generation.ipynb", albergado en este mismo repositorio y cuyo desarrollo ha sido llevado a cabo en un notebook de Google Collab (como apoyo al lector, dejo aquí el enlace del susodicho: https://bit.ly/47G3S2o). Este ha sido desgranado en las siguientes etapas:
+
+### 1. 
+
 
 ## 4. Datos y herramientas necesarias
