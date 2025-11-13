@@ -22,7 +22,7 @@ Y es que la marca ha de reorientar su enfoque de negocio de "vender autos de pri
 
 En una situación ideal, contar con los datos transaccionales reales de los clientes de Honda nos hubiese puesto más en tesitura con la realidad de la marca. Ante la imposibilidad de contar con ellos dada su privacidad, se ha optado por la generación de un dataset sintético.
 
-Este conjunto de datos, creado mediante Python (Pandas y Numpy), simula de forma realista el historial de transacciones del taller de postventa. Nos encontramos pues con un total de [Tu número, ej: 45,000] transacciones de [Tu número, ej: 5,000] clientes en un período de [Tu número, ej: 3] años, el cuál se halla estructurado en tres columnas clave:
+Este conjunto de datos, creado mediante Python (Pandas y Numpy), simula de forma realista el historial de transacciones del taller de postventa. Nos encontramos pues con un total de 33.711 transacciones de 5000 clientes en un período de 3 años, el cuál se halla estructurado en tres columnas clave:
 
 1) **CustomerID:** El identificador único del propietario del vehículo.
 2) **TransactionDate:** La fecha en la que el cliente acudió al servicio.
